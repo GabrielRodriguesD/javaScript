@@ -16,16 +16,25 @@
     const nomePessoa = prompt ("INFORME SEU NOME: ")
     // variável para receber o valor que a pessoa digitar no navegador
     //convertendo string para numero ( parseInt )
-    const anoNascimento = parseInt(prompt("Qual seu ano de Nascimento ?"))
-    // const anoNascimento = parseFloat(prompt("Qual seu ano de Nascimento ?"))
-    // const anoNascimento = Number(prompt("Qual seu ano de Nascimento ?"))
+    const anoNascimento = parseInt(prompt("Qual seu ano de Nascimento ?")) // (antes do prompt parse Float ou Number)
 
     //processamento de dados
     //fazendo o calculo com os valores recebidos no navegador
     const calcIdade = anoAtual - anoNascimento
-
     //saida de dados
     alert(`A idade do(a) ${nomePessoa} é de: ${calcIdade} anos`)
+
+    const nomePessoa = prompt ("Informe nome do aluno:  ")
+    const prova01 = parseInt(prompt("Qual sua 1 nota ?"))10
+    const prova02 = parseInt(prompt("Qual sua 2 nota ?"))6
+    const prova03 = parseInt(prompt("Qual sua 3 nota"))4.6
+
+    const media = (prova01 + prova02 + prova03) / 3
+
+    alert(`A nota do ${nomePessoa} é de: ${media}, logo ele foi aprovado`)
+
+
+    
    </script> 
 </body>
 </html>
