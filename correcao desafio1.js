@@ -15,8 +15,9 @@ const media = (prova01 + prova02 + prova03) / 3
 if (media >= 7) {
     //saída de dados
     console.log(`O aluno ${nomeAluno}, foi aprovado com a média final de: ${media.toFixed(2)}`);
-} else if (media >= 5 && media <= 6) {  
-    //saída de dados
+} else if (media >= 5 ) {  
+    //saída de dados 
+    // se a media não é maior ou igual a 7, então obrigatoriamente será menor que sete, não sendo preciso testar esta condição. Isso elimina a necessidade de utilizarmos operadores lógicos em condicionais simples
     console.log(`O aluno ${nomeAluno}, Esta de recuperação com a média final de: ${media.toFixed(2)}`);
 } else {
     //saída de dados
